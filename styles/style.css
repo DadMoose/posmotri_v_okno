@@ -86,6 +86,7 @@ fieldset {
 
 .search-form__fieldset-title {
   margin-block-end: 5px;
+  font-weight: inherit;
   font-size: 18px;
 }
 
@@ -193,7 +194,7 @@ fieldset {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 26px;
   inline-size: 100%;
 }
 
@@ -274,7 +275,7 @@ fieldset {
 
 .content__video-card-title {
   margin-block-end: 6px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -286,8 +287,6 @@ fieldset {
 
 .content__video-card-description {
   line-height: 16.2px;
-  text-overflow: ellipsis;  
-  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
