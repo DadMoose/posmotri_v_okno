@@ -27,6 +27,7 @@ html {
   margin: auto;
   color: var(--primary-color);
   font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
@@ -85,7 +86,6 @@ fieldset {
 
 .search-form__fieldset-title {
   margin-block-end: 5px;
-  font-weight: 400;
   font-size: 18px;
 }
 
@@ -114,8 +114,7 @@ fieldset {
   border-block-end: 1px solid var(--primary-color);
   padding-block: 2.5px;
   color: var(--primary-color);
-  font-family: "Fira Sans Condensed";
-  font-weight: 400;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   line-height: normal;
@@ -128,7 +127,6 @@ fieldset {
 }
 
 .search-form__textfield:focus {
-  border: 1px solid var(--primary-color);
   outline: none;
 }
 
@@ -158,10 +156,10 @@ fieldset {
 }
 
 .button {
-  block-size: 34px;
+  padding-block: 5px;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
-  font-family: "Fira Sans Condensed";
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -195,14 +193,14 @@ fieldset {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 20px;
   inline-size: 100%;
 }
 
 .title {
   inline-size: 100%;
   color: var(--primary-color);
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -241,6 +239,11 @@ fieldset {
   text-decoration: none;
 }
 
+.content__card-link:focus {
+  outline: none;
+  text-decoration: none;
+}
+
 .content__card-link_current {
   background-color: #545050;
 }
@@ -266,6 +269,7 @@ fieldset {
 
 .content__video-card-description-container {
   inline-size: 100%;
+  max-inline-size: 200px;
 }
 
 .content__video-card-title {
@@ -275,16 +279,21 @@ fieldset {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  overflow: hidden;
 }
 
 .content__video-card-description {
   line-height: 16.2px;
+  text-overflow: ellipsis;  
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
+  block-size: 103px;
   inline-size: 194px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
