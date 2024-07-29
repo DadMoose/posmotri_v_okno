@@ -8,6 +8,10 @@ html {
   block-size: 100%;
 }
 
+:root {
+  --primary-color: #fff;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -21,7 +25,7 @@ html {
 .page {
   display: flex;
   margin: auto;
-  color: #fff;
+  color: var(--primary-color);
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
@@ -106,10 +110,10 @@ fieldset {
 .search-form__textfield {
   inline-size: 225px;
   border: none;
-  border-block-start: 1px solid #fff;
-  border-block-end: 1px solid #fff;
+  border-block-start: 1px solid var(--primary-color);
+  border-block-end: 1px solid var(--primary-color);
   padding-block: 2.5px;
-  color: #fff;
+  color: var(--primary-color);
   font-family: "Fira Sans Condensed";
   font-weight: 400;
   font-size: 18px;
@@ -124,12 +128,12 @@ fieldset {
 }
 
 .search-form__textfield:focus {
-  border: 1px solid #fff;
+  border: 1px solid var(--primary-color);
   outline: none;
 }
 
 .search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
+  outline: 1px solid var(--primary-color);
   outline-offset: 1px;
 }
 
@@ -138,7 +142,7 @@ fieldset {
   z-index: 1;
   inline-size: 19px;
   block-size: 19px;
-  border: 1px solid #fff;
+  border: 1px solid var(--primary-color);
 }
 
 .search-form__checkbox:checked+.search-form__pseudo-checkbox::before {
@@ -150,13 +154,13 @@ fieldset {
   display: block;
   inline-size: 15px;
   block-size: 15px;
-  background-color: #fff;
+  background-color: var(--primary-color);
 }
 
 .button {
   block-size: 34px;
-  border: 1px solid #fff;
-  color: #FFF;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
   font-family: "Fira Sans Condensed";
   font-weight: 700;
   font-size: 18px;
@@ -179,7 +183,7 @@ fieldset {
 }
 
 .button:focus-visible {
-  outline: 1px solid #fff;
+  outline: 1px solid var(--primary-color);
   outline-offset: 1px;
 }
 
@@ -197,7 +201,7 @@ fieldset {
 
 .title {
   inline-size: 100%;
-  color: #FFF;
+  color: var(--primary-color);
   font-family: Oswald;
   font-weight: 700;
   font-size: 75px;
@@ -233,7 +237,7 @@ fieldset {
   display: block;
   margin: 2px;
   padding: 2px;
-  color: #fff;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -246,7 +250,7 @@ fieldset {
 }
 
 .content__card-link:focus-visible {
-  outline: 1px solid #fff;
+  outline: 1px solid var(--primary-color);
 }
 
 .content__card-link:hover {
